@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  h1= title
+  //- p Welcome to #{title}
+  h4 Send Message
+  p(style="color:red") #{status}
+  form(action="/send",method="post", role="form")
+    table
+      tr
+        td
+          .form-group
+            label Auth Id
+            input(type="text", class="form-control", name="authId")
+      tr
+        td
+          .form-group
+            label Auth Token
+            input(type="text", class="form-control", name="authToken")
+      tr
+        td
+          .form-group
+            label Phone No.
+            input(type="number", class="form-control", required="required" ,name="pno", placeholder="918845665758")
+      tr
+        td
+          .form-group
+            label Message
+            textarea(rows="4",class="form-control", cols="32", required="required", name="msg")
+      tr
+        td
+          input(type="submit", class="btn btn-default button", name="sub", value="Send")
+  hr
+  if apps
+    h2 List of Apps(Plivo)
+    table.table.table-hover
+      each app in apps
+        tr
+          td= app.app_name
+
+

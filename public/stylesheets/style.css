@@ -1,0 +1,54 @@
+
+.container-main
+{
+margin: auto;
+padding: 1px 0px 0px 0px;
+width: 392px;
+background: white;
+text-align: center;
+margin-top: 38px;
+
+}
+
+.container-main table
+{
+width: 87%;
+margin: auto;
+
+}
+.container-main h1
+{
+font-size: 36px;
+border-left: 34px solid #f65151;
+padding: 11px 16px 13px 3px;
+line-height: 51px;
+}
+
+.container-main h4
+{
+
+margin-left: 26px;
+
+}
+.container-main .button
+{
+  background: none repeat scroll 0 0 #f65151;
+    border: 1px solid #dc4848;
+    color: white;
+    float: left;
+    font-size: 18px;
+    padding: 14px 10px;
+    width: 100%;
+}
+
+.container-main .button:hover{background:#ee4e4e}
+
+
+@media screen and (max-width:480px) {
+
+.container-main
+{
+width:91%;
+}
+
+}
